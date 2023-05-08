@@ -1,0 +1,251 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj + some brand new features from Mary Feofanova
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{makecell}
+\usepackage[link=off]{phonenumbers}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\usepackage[margin=0.3in]{geometry}
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.0in}
+\addtolength{\evensidemargin}{-0.0in}
+\addtolength{\textwidth}{0in}
+\addtolength{\topmargin}{1pt}
+\addtolength{\textheight}{0.0in}
+
+\urlstyle{same}
+
+\usepackage{xcolor}% http://ctan.org/pkg/xcolor
+\usepackage{hyperref}% http://ctan.org/pkg/hyperref
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!50!red,
+  linkbordercolor=red,
+  urlcolor=blue!70!black
+}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\def \ifempty#1{\def\temp{#1} \ifx\temp\empty }
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+  	\ifempty{#1}#2\else\textbf{#1}{: #2 \vspace{-2pt}}\fi
+  }
+}
+
+\usepackage[dvipsnames]{xcolor}
+\definecolor{mygray}{gray}{0}
+\usepackage{fancybox}
+
+\usepackage{lmodern}
+\usepackage{tikz}
+
+% Style definition
+\tikzset{rndblock/.style={rounded corners,rectangle,draw,outer sep=0pt}}
+
+% Command Definition
+% 1 optional to customize the aspect, 2 mandatory: text to be framed
+\newcommand{\tframed}[2][]{\tikz[baseline=(h.base)]\node[rndblock,#1] (h) {\color{black}{#2}};}
+
+\newcommand*{\mystrut}{\rule[-0.2\baselineskip]{0pt}{0.8\baselineskip}}
+\newcommand{\skill}[1]{\tframed[lightgray]{\mystrut#1}}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textcolor{mygray}{#2} \\
+      \textit{\small#3} & \textcolor{mygray}{\textit{\small #4}} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeExpSubheading}[5]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1}  & \textcolor{mygray}{#2} \\
+      \textit{\small#3} & \textcolor{mygray}{\textit{\small #4}} \\
+      {\scriptsize#5}
+    \end{tabular*}\vspace{4pt}
+}
+
+\newcommand{\resumeProjSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1}  & \textcolor{mygray}{#2} \\
+      \scriptsize {#3} & \textcolor{mygray}{\textit{\small #4}} \\
+    \end{tabular*}\vspace{4pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\usepackage{changepage}
+\newcommand{\resumeDesc}[1]{\begin{adjustwidth}{5pt}{0pt}\vspace{-2pt}{\small{#1}}\end{adjustwidth}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\LARGE Denis Evteev} & Email : \href{mailto:mary.fifa3000@gmail.com}{mary.fifa3000@gmail.com}\\
+%   Github: \href{https://github.com/mary3000}{mary3000} & Mobile : +7\hspace{0.5ex}916\hspace{0.5ex}835\hspace{0.5ex}49\hspace{0.5ex}66 \\
+% \end{tabular*}
+\begin{center}
+    {\huge \scshape Daniil Medyakov} \\ \vspace{1pt}
+    Moscow, Russia  \\ \vspace{2pt}
+    \small \raisebox{-0.1\height}\faPhone\ +7 (916) 241-72-28 ~ \href{mediakov.do@phystech.edu}{\raisebox{-0.2\height}\ \underline{mediakov.do@phystech.edu}} ~ 
+    \href{https://www.telegram.me/petrsbobrov/}{\raisebox{-0.2\height}\ \underline{https://www.telegram.me/petrsbobrov/}}  ~
+    \href{https://github.com/asapmed}{\raisebox{-0.2\height}\ \underline{https://github.com/asapmed}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Moscow Institute of Physics and Technology}{Moscow, Russia}
+      {Bachelor of Applied Physics and Mathematics}{Sep 2020 - June 2024}\\ \vspace{2pt}
+      %\begin{comment}
+	 \resumeItemListStart
+        \resumeItem{GPA}
+          {4.6/5.00}
+      \resumeItemListEnd
+      %\end{comment}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+      \resumeSubheading
+      {Tutor}{St.Petersburg, Russia}
+      {Additional lessons in Olympiad mathematics, physics and programming.}{Sep 2019 - Sep 2022}
+
+  \resumeSubHeadingListEnd
+
+%-----------Projects-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjSubheading
+      {\href{https://github.com/asapmed/Optimal-data-splitting-in-distributed-optimization-for-machine-learning}{Optimal data splitting}}{Feb 2023 - Present}
+      {\skill{Optimization} \skill{Python}}
+          \resumeDesc{
+          We derived a new method of data partitioning for the distributed optimization problem. The solution is based on the separation of convex and nonconvex subproblems and the application of an accelerated extragradient algorithm. The method works in networks with star topology with different communication costs between the server and the local machines. The theoretical results have been confirmed experimentally. The method gives acceleration on problems of this type.
+      }
+  
+  \resumeProjSubheading
+      {\href{https://github.com/asapmed/db-theatre}{Database}}{Sep 2020 - Dec 2020}
+      {\skill{Microsoft SQL Server} \skill{Metadata} \skill{Transactions} \skill{Triggers} \skill{Optimization}}
+          \resumeDesc{
+          Created a database in SQL for a conditional poster of performances in famous theaters as a \textbf{graduation project} for a course at the MIPT. In addition to creating a DBMS, the following topics were worked out:
+Manipulating data, Creating and using views, Managing transactions, Managing access, Fetching metadata, Creating and using
+triggers, Using indexes and query optimizers.
+      }
+      \resumeProjSubheading
+      {{School projects}}{Sep 2019 - May 2020}
+      {\skill{Engineering} \skill{C} \skill{AutoCAD}}
+          \resumeDesc{
+          \textbf{Mini-rocket} \\
+          Designed a model of a mini-rocket in AutoCAD. Inside the rocket there were sensors for measuring temperature, humidity, an axylometer, etc. The sensors transmitted data to a computer using a controller. The controller was programmed in C. The rocket was launched to a height of 150 meters and successfully parachuted to the ground.
+      }
+      
+      
+  \resumeSubHeadingListEnd
+  
+\section{Achievements}
+  \resumeSubHeadingListStart
+        \resumeSubItem{} {\textbf{Mathematics Olympiads: \\}Various Olympiads of levels 1, 2, and 3 from the list of the Russian Council of Education of Schoolchildren, including the MIPT Olympiad} 
+    \resumeSubHeadingListEnd  
+
+\section{Extracurricular activities}
+  \resumeSubHeadingListStart
+        \resumeSubItem{} {\textbf{McKinsey case championship\\}Case Format: \textbf{Letter of Proposal} of a Zinc mining company.
+        The following stages were completed during the project:\\
+        Directions for medium-term \textbf{revenue increase} are proposed and \textbf{in-depth analysis on Python} was carried out\\
+        Suggested directions for \textbf{long-term revenue growth} and approach to solving the problem of \textbf{entering new markets}} 
+        \resumeSubItem{}{\textbf{Changellenge It cup 2021 case championship}}
+        
+        The task of linguistic learning was accomplished. It was required to understand which type of connection belongs to the sentence: consequence, contradiction, independence of statements. 
+        \resumeSubItem{\textbf{Nuclear power plant}} 
+
+        As part of a three-day case championship, as part of a team of 10 people designed a model of a nuclear power plant in the
+        conditions of the far north of Russia. In the course of the work, the most advantageous location of the power plant was
+        calculated, an economic assessment of the benefits of its operation was carried out, and its model was created in VR.
+
+        
+        \resumeSubItem{} {\textbf{Hobbies}}
+        
+        Music (6 years in Music School), Chess(1st category), Figure Skating(vice master), Football, History, Automobiles, Architecture
+        
+    \resumeSubHeadingListEnd  
+\section{{Courses}}
+
+
+  \resumeSubHeadingListStart
+        \resumeSubItem{\href{https://github.com/asapmed/optimization} {\textbf{Modern numerical optimization methods}}} {from \textbf{MIPT}}
+        \resumeSubItem{ {\textbf{C++ Engineering}}}{from \textbf{MIPT}}
+    \resumeSubHeadingListEnd
+%
+%--------PROGRAMMING SKILLS------------
+\section{Technical Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Programming}{: Python, C++, C, SQL }
+   }\vspace{-7pt}
+   \item{
+     \textbf{Libraries}{: Numpy, Pandas, MatPlotLib, SciPy, Scikit-learn}
+   }
+   \vspace{-7pt}
+   \item{
+     \textbf{Knowledge}{: Calculus, Linear and Higher Algebra, Differential equations, Numerical Optimization, Algorithms and Calculation models, Probability Theory, Complex Analysis, Functional Analysis, Parallel Computing}
+   }\vspace{-7pt}
+   \item{
+   \textbf{Languages}{: Russian(native), English(B2) }
+   }
+ \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
