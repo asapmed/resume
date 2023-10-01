@@ -155,24 +155,56 @@
   \resumeSubHeadingListEnd
 
 
-%-----------EXPERIENCE-----------------
+%-----------Work Experience-----------------
 \section{Work Experience}
   \resumeSubHeadingListStart
-      \resumeSubheading
-      {Tutor}{St.Petersburg, Russia}
-      {Additional lessons in Olympiad mathematics, physics and programming.}{Sep 2019 - Sep 2022}
 
+    \resumeProjSubheading
+      {{Laboratory of Mathematical Methods of Optimization MIPT, MIPT-Yandex Laboratory}}{Aug 2023 - Present}
+      {\skill{Researcher}}
+          \resumeDesc{
+          Scientific research in the field of optimization.
+      }
+
+      \resumeProjSubheading
+      {{Tactical Missile Armament Corporation}}{Jul 2022 - Aug 2022}
+      {\skill{Transport Analyst}}
+          \resumeDesc{
+          Optimization of the shipping model to the corporation's factories and optimization of the distribution of details to factory.
+      }
+
+      \resumeProjSubheading
+      {{Lyceum, St. Petersburg}}{Sep 2020 - Sep 2022}
+      {\skill{Tutor}}
+          \resumeDesc{
+          Additional lessons in Olympiad mathematics, physics and programming.
+      }
   \resumeSubHeadingListEnd
+
 
 %-----------Projects-----------------
 \section{Projects}
   \resumeSubHeadingListStart
 
     \resumeProjSubheading
-      {{Optimal data splitting}}{Feb 2023 - Present}
+      {{Optimal data splitting}}{Feb 2023 - Sep 2023}
       {\skill{Optimization} \skill{Python}}
           \resumeDesc{
-          We derived a new method of data partitioning for the distributed optimization problem. The solution is based on the separation of convex and nonconvex subproblems and the application of an accelerated extragradient algorithm. The method works in networks with star topology with different communication costs between the server and the local machines. The theoretical results have been confirmed experimentally. The method gives acceleration on problems of this type.
+          Recently, a lot of work on distributed optimization has focused on reducing the large cost of communication. But all results solve the communication bottleneck by focusing only on the fact that communication is significantly more expensive than local computing and does not take into account the various capacities of network devices and the different relationship between communication time and server capacity. We consider this problem an the objective of this study is to achieve an optimal ratio of distributed data between the server and local machines for any communication costs and local computations. The running times of the network are compared between uniform and optimal distributions. The superior theoretical performance of our solutions is experimentally validated.
+      }
+
+          \resumeProjSubheading
+      {{Summer school "Management, Information and optimization" named after B. T. Polyak}}{Jul 2023 - Jul 2023}
+      {\skill{Optimization} \skill{Python}}
+          \resumeDesc{
+          Participated in the B. T. Polyak Summer School and presented a poster session with a paper on optimal data splitting.
+      }
+      
+\resumeProjSubheading
+      {{Shuffling methods}}{Aug 2023 - Present}
+      {\skill{Optimization} \skill{Python}}
+          \resumeDesc{
+          Work is in progress to apply the shuffling method to variance reduction and coordinate methods. Nowadays, it is practically obtained that many stochastic methods converge fast if we apply the shuffling technique to them. The aim of the paper is to prove better theoretical estimates of the convergence of these methods, thereby showing that methods with shuffling perform better than without it.
       }
   
   \resumeProjSubheading
